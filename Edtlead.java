@@ -9,8 +9,10 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Edtlead  extends Baseclass{
-	@Test
+	
+	@Test(priority=1)
 	public  void runedtlead() throws InterruptedException {
+		
 		
 		driver.findElement(By.linkText("Find Leads")).click();
 		driver.findElement(By.xpath("//span[text()='Phone']")).click();

@@ -8,9 +8,10 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Createlead  extends Baseclass{
-	@Test
-	public  void runcreatelead()  {
+public class Createlead extends Baseclass {
+
+	@Test(invocationCount=4)
+	public void runcreatelead()  {
 		
 		driver.findElement(By.linkText("Create Lead")).click();
 		driver.findElement(By.id("createLeadForm_companyName")).sendKeys("TestLeaf");

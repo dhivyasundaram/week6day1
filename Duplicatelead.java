@@ -8,9 +8,11 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Duplicatelead extends Baseclass {
-	@Test
+public class Duplicatelead extends Baseclass{
+	
+	@Test(priority=2)
 	public  void runduplictaelead() throws InterruptedException {
+		
 		
 		driver.findElement(By.linkText("Find Leads")).click();
 		driver.findElement(By.xpath("//span[text()='Phone']")).click();

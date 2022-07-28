@@ -11,8 +11,9 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Mergelead extends Baseclass {
-	@Test
+public class Mergelead  extends Baseclass{
+	public ChromeDriver driver;
+	@Test(enabled=false)
 	public void runmergelead() throws InterruptedException {
 		
 		driver.findElement(By.linkText("Merge Leads")).click();

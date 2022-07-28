@@ -9,7 +9,9 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Deletelead extends Baseclass {
-	@Test
+	
+	
+	@Test(priority=-1)
 	public  void rundeletelead() throws InterruptedException {
 		
 		driver.findElement(By.linkText("Find Leads")).click();
